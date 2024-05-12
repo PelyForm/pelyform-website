@@ -34,8 +34,8 @@ app.use( "/", require('./src/router'));
 app.use(errHandler);
 
 
-app.listen(appConfig.port, async () => {
-    console.log(`Server is running on port ${appConfig.port}`);
+app.listen(1000, async () => {
+    console.log(`Server is running on port ${1000}`);
 
 
 });

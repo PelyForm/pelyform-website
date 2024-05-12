@@ -8,26 +8,61 @@
 
     .hero-text {
         flex: 1;
+        order: 1;
     }
 
     .hero-title {
         font-size: 2.5rem;
         color: #1c0030;
+        font-weight: 500;
+        margin-bottom: 15px;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #1c0030;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 15px;  
+    }
+    .hero-text button{
+        padding: 0.5rem 1rem;
+        background-color: #1c0030;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 12px;
+    }
+    .hero-text button:hover {
+        background-color: #350063; /* Change this to the color you want on hover */
     }
 
     .hero-image {
         flex: 1;
-        width: 400px;
+        order: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero-image img {
-        width: 100%;
+        width: 92%;
         height: auto;
+    }
+    @media (max-width: 991px) {
+        .hero {
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
+    @media (max-width: 768px) {
+    
+    }
+    @media (max-width: 576px) {
+    
     }
 </style>
 
@@ -35,10 +70,10 @@
     <div class="hero-text">
         <h1 class="hero-title"> <%- heroTitle %> </h1>
         <p class="hero-subtitle"><%- heroSubtitle %></p>
+        <button><%- buttonTitle %></button>
     </div>
     <div class="hero-image">
         <img src="/<%- heroImage %>" alt="Hero Image">
-
     </div>
     
 </div>

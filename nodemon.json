@@ -1,0 +1,12 @@
+{
+    "watch": [
+      "index.js",
+      "app.js",
+      "src/",
+      "public/"
+    ],
+    "ext": "js,ejs,css",
+    "ignore": [
+      "node_modules/"
+    ]
+  }
