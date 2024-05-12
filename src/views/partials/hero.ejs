@@ -1,0 +1,44 @@
+<style>
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+    }
+
+    .hero-text {
+        flex: 1;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        color: #1c0030;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        color: #1c0030;
+    }
+
+    .hero-image {
+        flex: 1;
+        width: 400px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="hero">
+    <div class="hero-text">
+        <h1 class="hero-title"> <%- heroTitle %> </h1>
+        <p class="hero-subtitle"><%- heroSubtitle %></p>
+    </div>
+    <div class="hero-image">
+        <img src="/<%- heroImage %>" alt="Hero Image">
+
+    </div>
+    
+</div>

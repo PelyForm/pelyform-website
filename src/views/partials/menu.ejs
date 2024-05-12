@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        .navbar-bg {
+            background: transparent;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-toggler {
+            display: none;
+        }
+        .navbar-brand img {
+            height: 70px;
+        }
+        .navbar-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2rem;
+            flex-direction: row;
+        }
+        .nav-item {
+            color: #1c0030;
+        }
+        .nav-link {
+            text-decoration: none;
+            color: #1c0030;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #52018c;
+        }
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+            }
+            .navbar-toggler {
+                display: initial;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar-bg">
+    <nav class="navbar container">
+        <a class="navbar-brand" href="/">
+            <img src="/logo.png" alt="Company Logo">
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li>
+        </ul>
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+</div>
+
+<script>
+    document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        var nav = document.querySelector('.navbar-nav');
+        if(nav.style.display === 'flex') {
+            nav.style.display = 'none';
+        } else {
+            nav.style.display = 'flex';
+        }
+    });
+</script>
+
+</body>
+</html>
