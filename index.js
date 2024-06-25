@@ -40,7 +40,9 @@ app.listen(1000, async () => {
 
 });
 
-
+const token = Buffer.from("RO1M7SD2KVB20P98KRGM0TKXA9X3NPY0:HXTQ7G39APPZYQW5OUFBZ3HRCZYWUOFD").toString('base64');
+console.log(token);
 process.on('SIGINT', async () => {
     process.exit(0);
 });
+

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 
@@ -16,20 +17,94 @@
             background: linear-gradient(to bottom, #FBF4DF, rgba(104, 95, 212, 0.1));
             color: #000;
         }
-        </style>
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card-wrapper {
+            background:transparent;
+            border-radius: 25px;
+            padding: 20px;
+            flex: 1;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+        }
+        .icon-container {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .card-icon {
+            color: rgb(48, 47, 47);
+            font-size: 25px;
+            
+        }
+        .card-wrapper p{
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .6);
+            line-height: 1.6;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        @media (max-width: 992px) {
+            .card-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
     <div class="gradient-section">
         <%- include('partials/menu') %>
-            <div class="container mt-4">
-                <%- include('partials/hero') %>
-            </div>
+            <% if (page=='home' || page =='solutions' ) { %>
+                <div class="container mt-4">
+                    <%- include('partials/hero') %>
+                </div>
+                
+                    <div class=" container card-container ">
+                        <div class="card-wrapper">
+                            <div class="icon-container" style="background-color: #C3BFED; color:#685FD4">
+                                <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+                            </div>  
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="icon-container" style="background-color: #F3E4BD; color:#F2C94C">
+                                <i class="fas fa-cog card-icon" style="color:#F2C94C"></i>
+                            </div>  
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="icon-container" style="background-color: #D0DEF1; color:#8AB2DC">
+                                <i class="fas fa-cog card-icon" style=" color:#8AB2DC"></i>
+                            </div> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+
+
     </div>
-    <div class="container mt-4">
-        <%- include(page) %>
-    </div>
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
