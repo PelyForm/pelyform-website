@@ -1,0 +1,95 @@
+<style>
+    
+    .contact-container{
+        box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
+        height: 100%;
+    }
+    
+    .contact-container h1{
+        font-weight: 600;
+        color: #1c0030;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    .contact-container p{
+        color: #1c0030;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .contact-link {
+        flex: 1;
+        background: #350063;
+        width: 100%;
+    }
+
+
+    .contact-booking {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        width: 100%;
+        
+    }
+
+
+    .contact-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-booking p {
+        font-size: 1rem;
+        color: #000;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    @media (max-width: 992px) {
+        .contact-content {
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="contact-container">
+    <h1>Contact Us</h1>
+    <p>lorem ipsum dolor sit amet gamet pamet</p>
+    <div class="contact-content">
+        <div class="contact-link">
+            all about contact link
+        </div>
+
+        <div class="contact-booking">
+            <p>Welcome to [Your Company], where we specialize in providing top-notch solutions for your needs. Our
+                dedicated team is committed to delivering exceptional services and ensuring</p>
+            <button>
+                Book Now
+            </button>
+        </div>
+    </div>
+
+</div>

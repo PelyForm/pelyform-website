@@ -1,0 +1,63 @@
+<style>
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:60px;
+        height: 90.5vh;
+    }
+
+    .image-container{
+        flex: 1;
+    }
+
+    .about-image {
+     
+        height: auto;
+        width: 100%;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+   .about-text h1 {
+        font-weight: 600;
+        color: #1c0030;
+        padding-bottom: 5px;
+    }
+   .about-text p{
+        font-size: 1rem;
+        color: #000;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 0;
+   }
+
+    @media (max-width: 992px) {
+        .about-content {
+            flex-direction: column;
+        }
+        h1 {
+        text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+</style>
+
+    <div class="about-content  pt-sm-5 mt-lg-0 pt-sm-5 mt-lg-0">
+        <div class="image-container">
+            <img src="/aboutUs.png" alt="About Us Image" class="about-image">
+        </div>
+
+        <div class="about-text">
+            <h1>About Us</h1>
+            <p>Welcome to [Your Company], where we specialize in providing top-notch solutions for your needs. Our
+                dedicated team is committed to delivering exceptional services and ensuring customer satisfaction. Learn
+                more about our story, mission, and values below.</p>
+        </div>
+    </div>

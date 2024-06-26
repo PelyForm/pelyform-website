@@ -22,17 +22,17 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 20px;
         }
 
         .card-wrapper {
-            background:transparent;
+            background: transparent;
             border-radius: 25px;
             padding: 20px;
             flex: 1;
-            border: 3px solid #fff;
-            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+            border: 3px solid #ffffff;
+            box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
         }
+
         .icon-container {
             width: 60px;
             height: 60px;
@@ -46,9 +46,10 @@
         .card-icon {
             color: rgb(48, 47, 47);
             font-size: 25px;
-            
+
         }
-        .card-wrapper p{
+
+        .card-wrapper p {
             font-size: 1rem;
             font-weight: 400;
             color: rgba(0, 0, 0, .6);
@@ -73,42 +74,49 @@
 
 <body>
     <div class="gradient-section">
+        <div class="container">
         <%- include('partials/menu') %>
-            <% if (page=='home' || page =='solutions' ) { %>
-                <div class="container mt-4">
-                    <%- include('partials/hero') %>
-                </div>
-                
-                    <div class=" container card-container ">
-                        <div class="card-wrapper">
-                            <div class="icon-container" style="background-color: #C3BFED; color:#685FD4">
-                                <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
-                            </div>  
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+            <% if (page=='home' || page=='solutions' ) { %>
+
+
+                <%- include('partials/hero') %>
+
+
+                <div class="card-container ">
+                    <div class="card-wrapper">
+                        <div class="icon-container" style="background-color: #C3BFED; color:#685FD4">
+                            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
                         </div>
-                        <div class="card-wrapper">
-                            <div class="icon-container" style="background-color: #F3E4BD; color:#F2C94C">
-                                <i class="fas fa-cog card-icon" style="color:#F2C94C"></i>
-                            </div>  
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="icon-container" style="background-color: #F3E4BD; color:#F2C94C">
+                            <i class="fas fa-cog card-icon" style="color:#F2C94C"></i>
                         </div>
-                        <div class="card-wrapper">
-                            <div class="icon-container" style="background-color: #D0DEF1; color:#8AB2DC">
-                                <i class="fas fa-cog card-icon" style=" color:#8AB2DC"></i>
-                            </div> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="icon-container" style="background-color: #D0DEF1; color:#8AB2DC">
+                            <i class="fas fa-cog card-icon" style=" color:#8AB2DC"></i>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
                     </div>
                 </div>
+
+
             <% } %>
 
+            <%- include(page) %>
 
+        </div>
     </div>
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="/js/script.js"></script>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="/js/script.js"></script>
 </body>
 
 </html>
