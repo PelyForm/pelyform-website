@@ -1,17 +1,17 @@
 <style>
-    
-    .contact-container{
+    .contact-container {
         box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
         height: 100%;
+        padding-bottom: 100px;
     }
-    
-    .contact-container h1{
+
+    .contact-container h1 {
         font-weight: 600;
         color: #1c0030;
-        padding-bottom: 5px;
         text-align: center;
     }
-    .contact-container p{
+
+    .contact-container p {
         color: #1c0030;
         font-size: 1rem;
         font-weight: 400;
@@ -25,12 +25,85 @@
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: stretch;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .contact-link {
         flex: 1;
-        background: #350063;
+        background-color: #fbf4e1;
         width: 100%;
+    }
+
+    .contact-wrapper {
+        padding: 60px 40px 60px 40px;
+        color: #1c0030;
+    }
+
+    .contact-wrapper h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .contact-wrapper p {
+        font-size: 14px;
+        color: #1c0030;
+        text-align: left;
+        font-weight: 400;
+        padding-top: -3px;
+    }
+
+    .info {
+        margin: 80px 0 60px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-wrapper .info {
+        padding-bottom: 20px;
+    }
+
+    .contact-wrapper .info i {
+        margin-right: 12px;
+    }
+
+    .contact-wrapper .social-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .contact-wrapper .social-icons .social-icons-link , .social-icons-link-first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #1c0030;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .contact-wrapper .social-icons .social-icons-link-first a {
+        color: #1c0030;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .contact-wrapper .social-icons .social-icons-link a {
+        margin: 0 10px;
+        color: #1c0030;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .contact-wrapper .social-icons .social-icons-link:hover, .social-icons-link-first:hover {
+        border: 1px solid #350063;  ;
+    }
+
+    .contact-wrapper .social-icons .social-icons-link a:hover {   
+        color:#350063;  
+    }
+    .contact-wrapper .social-icons .social-icons-link-first a:hover {
+        color:#350063; 
     }
 
 
@@ -42,45 +115,71 @@
         justify-content: center;
         background: #fff;
         width: 100%;
-        
-    }
-
-
-    .contact-image {
-        height: auto;
-        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     .contact-booking p {
         font-size: 1rem;
-        color: #000;
+        color: #1c0030;
         font-weight: 400;
         line-height: 1.6;
         margin-bottom: 0;
         text-align: center;
+        padding: 0 40px 0 40px;
+    }
+
+    .contact-booking button {
+        padding: 0.5rem 1rem;
+        background-color: #1c0030;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+    }
+
+    .contact-booking button:hover {
+        background-color: #350063;
+        /* Change this to the color you want on hover */
     }
 
     @media (max-width: 992px) {
         .contact-content {
             flex-direction: column;
+
         }
 
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            text-align: center;
-        }
     }
 </style>
 
-<div class="contact-container">
+<div class="contact-container pt-5">
     <h1>Contact Us</h1>
     <p>lorem ipsum dolor sit amet gamet pamet</p>
-    <div class="contact-content">
+    <div class="contact-content mt-5">
         <div class="contact-link">
-            all about contact link
+            <div class="contact-wrapper">
+                <h2>Contact Information</h2>
+                <p>Say something to start a live chat!</p>
+                <div class="info">
+                    <div><i class="fas fa-phone"></i>+880 01823614751</div>
+                    <div><i class="fas fa-envelope"></i>pelyform@gmail.com</div>
+                    <div><i class="fas fa-map-marker-alt"></i>Dhaka, Bangladesh</div>
+                </div>
+                <div class="social-icons">
+                    <div class="social-icons-link-first">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="social-icons-link">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="social-icons-link">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <div class="contact-booking">

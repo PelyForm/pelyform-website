@@ -1,0 +1,113 @@
+<style>
+    .solutions-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .solutions-card-wrapper {
+        background: transparent;
+        border-radius: 25px;
+        padding: 20px;
+        border: 3px solid #ffffff;
+        box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        width: calc(33.33% - 20px); /* Adjust width to fit 3 cards in a row with gaps */
+    }
+
+    .solutions-icon-container {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .card-icon {
+        color: rgb(48, 47, 47);
+        font-size: 25px;
+    }
+
+    .solutions-card-wrapper h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #1c0030;
+        line-height: 1.6;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    .solutions-card-wrapper p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, .6);
+        line-height: 1.6;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    @media (max-width: 1200px) {
+        .solutions-card-wrapper {
+            width: calc(50% - 15px); /* 2 cards per row for medium screens */
+        }
+    }
+
+    @media (max-width: 768px) {
+        .solutions-card-wrapper {
+            width: calc(100% - 15px); /* 1 card per row for small screens */
+        }
+    }
+</style>
+
+<div class="solutions-card-container ">
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+    <div class="solutions-card-wrapper">
+        <div class="solutions-icon-container" style="background-color: #C3BFED;">
+            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+        </div>
+        <h5>Web Development</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+    </div>
+</div>

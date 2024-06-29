@@ -1,0 +1,77 @@
+<style>
+
+    .vision-container{
+        padding-top: 80px;
+        padding-bottom: 130px;
+        
+    }
+    .vision-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:60px;
+    }
+
+    .vision-image-container{
+        flex: 1;
+        order: 2;
+    }
+
+    .vision-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .vision-text {
+        flex: 1;
+        order: 1;
+    }
+
+   .vision-text h1 {
+        font-weight: 600;
+        color: #1c0030;
+        padding-bottom: 5px;
+    }
+   .vision-text p{
+        font-size: 1rem;
+        color: #000;
+        font-weight: 400;
+        line-height: 1.6;
+        margin-bottom: 0;
+   }
+
+    @media (max-width: 992px) {
+        .vision-content {
+            flex-direction: column;
+        }
+
+        .vision-image-container{
+            order: 2;
+        }
+        .vision-text {
+            order: 1;
+        }
+        h1 {
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+</style>
+<section class="vision-container">
+    <div class="vision-content  pt-sm-5 mt-lg-0 pt-sm-5 mt-lg-0">
+        <div class="vision-text">
+            <h1>Our Vision</h1>
+            <p>
+                Welcome to [Your Company], where we specialize in providing top-notch solutions for your needs. Our
+                dedicated team is committed to delivering exceptional services and ensuring customer satisfaction. Learn
+                more vision our story, mission, and values below.
+            </p>
+        </div>
+        <div class="vision-image-container">
+            <img src="/aboutUs.png" alt="vision Us Image" class="vision-image">
+        </div>
+    </div>
+</section>
