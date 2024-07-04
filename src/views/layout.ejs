@@ -17,6 +17,10 @@
             background: linear-gradient(to bottom, #FBF4DF, rgba(104, 95, 212, 0.1));
             color: #000;
         }
+        .navbar{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
 
         .card-container {
             display: flex;
@@ -56,10 +60,6 @@
             line-height: 1.6;
             margin-bottom: 0;
             padding-bottom: 0;
-        }
-        .footer{
-            height: 300px;
-            background-color:#e7e0eb85;    
         }
 
         @media (max-width: 992px) {
@@ -113,12 +113,10 @@
             <%- include(page) %>
         </div>
         
-        <section class="footer">
-
+        <section>
+            <%- include('partials/footer') %>
         </section>
     </div>
-
-
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
