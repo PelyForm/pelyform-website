@@ -7,7 +7,6 @@ const errHandler = require('./src/middleware/errHandler');
 
 
 const morgan = require('morgan');
-const { appConfig } = require('./src/constant');
 const app = express();
 
 app.use(cors());
@@ -35,13 +34,12 @@ app.use(errHandler);
 
 
 app.listen(5000, async () => {
-    console.log(`Server is running on port ${1000}`);
+    console.log(`Server is running on port ${5000}`);
 
 
 });
 
-const token = Buffer.from("RO1M7SD2KVB20P98KRGM0TKXA9X3NPY0:HXTQ7G39APPZYQW5OUFBZ3HRCZYWUOFD").toString('base64');
-console.log(token);
+
 process.on('SIGINT', async () => {
     process.exit(0);
 });
