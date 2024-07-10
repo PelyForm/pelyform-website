@@ -1,7 +1,7 @@
 const router = require("express").Router()
 
 router.get('/', (req, res) => {
-    res.render('layout', { page: 'home', title: 'Home', heroTitle: 'Unleashing Innovation with Pelyform', heroSubtitle: 'Pelyform harnesses technology to create innovative solutions. We empower businesses to thrive in a digital world. Discover how our products can transform your operations.', buttonTitle:'Learn more', heroImage: 'home-hero.png'});
+    res.render('layout', { page: 'home', title: 'Home', heroTitle: 'Unleashing Innovation with Pelyform', heroSubtitle: 'At Pelyform, we are committed to driving business success through innovative solutions. Our expertise enables businesses to achieve transformative results and thrive in a competitive landscape. Discover how our tailored strategies can elevate your operations and fuel your growth.', buttonTitle:'Book Now', heroImage: 'home-hero.png'});
 });
 
 

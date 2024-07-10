@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-
 
     <title>Pelyform - <%= title %>
     </title>
@@ -35,6 +36,7 @@
             flex: 1;
             border: 3px solid #ffffff;
             box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
+            width: 100%;
         }
 
         .icon-container {
@@ -86,26 +88,27 @@
                 <%- include('partials/hero') %>
 
 
-                <div class="card-container ">
+                <div class="card-container">
                     <div class="card-wrapper">
                         <div class="icon-container" style="background-color: #C3BFED;">
-                            <i class="fas fa-cog card-icon" style="color:#685FD4"></i>
+                            <i class="fas fa-tasks card-icon" style="color:#685FD4"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        <p>We have successfully completed over 50 projects, delivering quality solutions.</p>
                     </div>
                     <div class="card-wrapper">
                         <div class="icon-container" style="background-color: #F3E4BD;">
-                            <i class="fas fa-cog card-icon" style="color:#F2C94C"></i>
+                            <i class="fas fa-map-marked-alt card-icon" style="color:#F2C94C"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        <p>Our services reach clients in more than 20 countries worldwide.</p>
                     </div>
                     <div class="card-wrapper">
                         <div class="icon-container" style="background-color: #D0DEF1;">
-                            <i class="fas fa-cog card-icon" style=" color:#8AB2DC"></i>
+                            <i class="fas fa-star card-icon" style="color:#8AB2DC"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id.</p>
+                        <p>We maintain a 95% client satisfaction rate through our dedication to excellence.</p>
                     </div>
                 </div>
+                
 
 
             <% } %>

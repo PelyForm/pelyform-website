@@ -1,80 +1,90 @@
 <style>
+  .about-container {
 
-    .about-container{
-        padding-top: 80px;
-        padding-bottom: 130px;
-        
-    }
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .about-image-container {
+    flex: 1;
+    order: 1;
+  }
+
+  .about-image {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-text {
+    flex: 1;
+    order: 2;
+  }
+
+  .about-text h1 {
+    font-weight: 600;
+    color: #1c0030;
+    padding-bottom: 5px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 992px) {
     .about-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap:60px;
+      flex-direction: column;
     }
 
-    .about-image-container{
-        flex: 1;
-        order: 1;
-    }
-
-    .about-image {
-        height: auto;
-        width: 100%;
+    .about-image-container {
+      order: 2;
     }
 
     .about-text {
-        flex: 1;
-        order: 2;
+      order: 1;
     }
 
-   .about-text h1 {
-        font-weight: 600;
-        color: #1c0030;
-        padding-bottom: 5px;
+    .about-text h1 {
+      text-align: center;
     }
-   .about-text p{
-        font-size: 1rem;
-        color: #000;
-        font-weight: 400;
-        line-height: 1.6;
-        margin-bottom: 0;
-   }
 
-    @media (max-width: 992px) {
-        .about-content {
-            flex-direction: column;
-        }
-
-        .about-image-container{
-            order: 2;
-        }
-        .about-text {
-            order: 1;
-        }
-        .about-text h1{
-            text-align: center;
-        }
-        .about-text p{
-            text-align: center;
-        }
+    .about-text p {
+      text-align: center;
     }
+  }
 </style>
 <section class="about-container">
-    <div class="about-content  pt-sm-5 mt-lg-0 pt-sm-5 mt-lg-0">
-        <div class="about-image-container">
-            <img src="/aboutUs.png" alt="About Us Image" class="about-image">
-        </div>
-
-        <div class="about-text">
-            <h1>About Us</h1>
-            <p>
-                Welcome to [Your Company], where we specialize in providing top-notch solutions for your needs. Our
-                dedicated team is committed to delivering exceptional services and ensuring customer satisfaction. Learn
-                more about our story, mission, and values below.
-            </p>
-        </div>
+  <div class="about-content pt-sm-5">
+    <div class="about-image-container">
+      <div id="about-lottie" class="about-image"></div>
     </div>
+
+    <div class="about-text">
+      <h1>About Us</h1>
+      <p>
+        Our journey at Pelyform has been one of consistent dedication to helping businesses succeed. We specialize in crafting tailored solutions that provide a seamless and exceptional experience. Our team, with its deep expertise and collaborative spirit, focuses on understanding your unique needs and delivering results that truly make a difference. What sets us apart is our commitment to quality and the enduring relationships we build with our clients.
+
+
+      </p>
+    </div>
+  </div>
 </section>
 
- 
+<script>
+  lottie.loadAnimation({
+    container: document.getElementById('about-lottie'), // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: '/about.json' // the path to the animation json
+  });
+</script>
