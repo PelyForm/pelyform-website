@@ -55,6 +55,17 @@ jobs:
       - name: Update EC2
         run: ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.API_SERVER }} 'bash /home/ec2-user/server-configuration/update_ec2.sh'
 
+  generate-ssl:
+    if: ${{ github.event.inputs.generate_ssl == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Generate SSL
+        run: ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.API_SERVER }} 'bash /home/ec2-user/server-configuration/ssl.sh'
+
 
   build:
     if: ${{ github.event.inputs.build == 'true' }}
