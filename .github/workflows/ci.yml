@@ -11,6 +11,11 @@ on:
         description: "Run transfer file step"
         required: false
         default: "false"
+      generate_ssl:
+        description: "Run generate SSL step"
+        required: false
+        default: "false"
+        
       build:
         description: "Run build step"
         required: false
