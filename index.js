@@ -19,6 +19,7 @@ app.use(
 );
 app.use(morgan('dev'));
 
+
 app.use(express.static('public'));
 app.set('views', './src/views');
 
