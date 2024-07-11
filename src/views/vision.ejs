@@ -1,7 +1,4 @@
 <style>
-  .vision-container {
-   
-  }
 
   .vision-content {
     display: flex;
@@ -26,12 +23,22 @@
     order: 1;
   }
 
-  .vision-text h1 {
+  .heading-wrapper{
+    width: 200px;
+  }
+  .heading-wrapper h1 {
     font-weight: 600;
     color: #1c0030;
     padding-bottom: 5px;
   }
 
+  .heading-underline {
+    width: 100px;
+    height: 5px;
+    background-color: #53018b;
+    border-radius: 25px;
+    margin-bottom: 30px;
+  }
   .vision-text p {
     font-size: 1rem;
     color: #000;
@@ -63,10 +70,14 @@
   }
 </style>
 
-<section class="vision-container">
+<section class="vision-container pt-sm-5 pt-mt-0">
   <div class="vision-content ">
     <div class="vision-text">
-      <h1>Our Vision</h1>
+      <div class="heading-wrapper">
+        <h1>Our Vision</h1>
+        <div class="heading-underline"></div>
+      </div>
+    
       <p>
         Our vision at Pelyform is to lead through innovation and dedication, consistently providing value to our clients. We aim to foster growth and transformation by adapting to the evolving needs of the business landscape. Our focus is on creating lasting relationships and delivering solutions that not only meet but exceed expectations. Through our commitment to excellence, we strive to be a trusted partner in your continued success.
 

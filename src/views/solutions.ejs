@@ -3,11 +3,27 @@
     .solutions-container {
         padding-top: 80px;
         padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
-    .solutions-container h1 {
+
+    .solutions-heading-wrapper{
+        width: 200px;
+    }
+    .solutions-heading-wrapper h1 {
         font-weight: 600;
         color: #1c0030;
-        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .heading-underline {
+        width: 100px;
+        height: 5px;
+        background-color: #53018b;
+        border-radius: 25px;
+        margin-bottom: 30px;
     }
 
     .solutions-container p {
@@ -46,11 +62,14 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
+        background: #d5d2f2;
     }
 
     .card-icon {
         color: rgb(48, 47, 47);
         font-size: 25px;
+        color: #685FD4;
+
     }
 
     .solutions-card-wrapper h5 {
@@ -85,47 +104,50 @@
 </style>
 
 <div class="solutions-container">
-    <h1>Solutions</h1>
+    <div class="solutions-heading-wrapper">
+        <h1>Solutions</h1>
+        <div class="heading-underline"></div>
+      </div>
     <p>Discover our range of innovative solutions designed to address your business challenges and drive growth.</p>
     <div class="solutions-card-container pt-5">
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-laptop-code card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-laptop-code card-icon"></i>
             </div>
             <h5>Web Application</h5>
             <p>Building scalable and robust web applications tailored to your business needs.</p>
         </div>
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-mobile-alt card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-mobile-alt card-icon"></i>
             </div>
             <h5>Mobile Application</h5>
             <p>Creating seamless and engaging mobile experiences across all platforms.</p>
         </div>
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-plug card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-plug card-icon"></i>
             </div>
             <h5>API Development</h5>
             <p>Designing efficient APIs to integrate and enhance your digital ecosystem.</p>
         </div>
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-cloud card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-cloud card-icon"></i>
             </div>
             <h5>Cloud Solutions</h5>
             <p>Providing scalable and secure cloud solutions to optimize your operations.</p>
         </div>
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-robot card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-robot card-icon"></i>
             </div>
             <h5>AI Development</h5>
             <p>Implementing advanced AI systems to drive innovation and efficiency.</p>
         </div>
         <div class="solutions-card-wrapper">
-            <div class="solutions-icon-container" style="background-color: #C3BFED;">
-                <i class="fas fa-sync-alt card-icon" style="color:#685FD4"></i>
+            <div class="solutions-icon-container">
+                <i class="fas fa-sync-alt card-icon"></i>
             </div>
             <h5>Automation</h5>
             <p>Automating processes to enhance productivity and accuracy.</p>
