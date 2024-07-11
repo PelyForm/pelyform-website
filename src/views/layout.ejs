@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
-
+    <link rel="icon" href="/fav.png" type="image/png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 
     <title>Pelyform - <%= title %>
     </title>
@@ -18,7 +21,8 @@
             background: linear-gradient(to bottom, #FBF4DF, rgba(104, 95, 212, 0.1));
             color: #000;
         }
-        .navbar{
+
+        .navbar {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
@@ -81,50 +85,50 @@
 <body>
     <div class="gradient-section">
         <div class="container">
-        <%- include('partials/menu') %>
-            <% if (page=='home' || page=='solutions' ) { %>
+            <%- include('partials/menu') %>
+                <% if (page=='home' || page=='solutions' ) { %>
 
 
-                <%- include('partials/hero') %>
+                    <%- include('partials/hero') %>
 
 
-                <div class="card-container">
-                    <div class="card-wrapper">
-                        <div class="icon-container" style="background-color: #d5d2f2;">
-                            <i class="fas fa-tasks card-icon" style="color:#685FD4"></i>
+                        <div class="card-container">
+                            <div class="card-wrapper">
+                                <div class="icon-container" style="background-color: #d5d2f2">
+                                    <i class="fas fa-tasks card-icon" style="color:#685FD4"></i>
+                                </div>
+                                <p>We have successfully completed over 50 projects, delivering quality solutions.</p>
+                            </div>
+                            <div class="card-wrapper">
+                                <div class="icon-container" style="background-color: #faebc2;">
+                                    <i class="fas fa-map-marked-alt card-icon" style="color:#F2C94C"></i>
+                                </div>
+                                <p>Our services reach clients in more than 20 countries worldwide.</p>
+                            </div>
+                            <div class="card-wrapper">
+                                <div class="icon-container" style="background-color: #d7e5f8;">
+                                    <i class="fas fa-star card-icon" style="color:#8AB2DC"></i>
+                                </div>
+                                <p>We maintain a 95% client satisfaction rate through our dedication to excellence.</p>
+                            </div>
                         </div>
-                        <p>We have successfully completed over 50 projects, delivering quality solutions.</p>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="icon-container" style="background-color: #faebc2;">
-                            <i class="fas fa-map-marked-alt card-icon" style="color:#F2C94C"></i>
-                        </div>
-                        <p>Our services reach clients in more than 20 countries worldwide.</p>
-                    </div>
-                    <div class="card-wrapper">
-                        <div class="icon-container" style="background-color: #d7e5f8;">
-                            <i class="fas fa-star card-icon" style="color:#8AB2DC"></i>
-                        </div>
-                        <p>We maintain a 95% client satisfaction rate through our dedication to excellence.</p>
-                    </div>
-                </div>
-                
 
 
-            <% } %>
 
-            <%- include(page) %>
+                        <% } %>
+
+                            <%- include(page) %>
         </div>
-        
+
         <section>
             <%- include('partials/footer') %>
         </section>
     </div>
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

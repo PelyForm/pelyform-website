@@ -3,12 +3,28 @@
         box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
         height: 100%;
         padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    .contact-container h1 {
+    .contact-heading-wrapper {
+        width: 250px;
+    }
+
+    .contact-heading-wrapper h1 {
         font-weight: 600;
         color: #1c0030;
-        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .heading-underline {
+        width: 100px;
+        height: 5px;
+        background-color: #53018b;
+        border-radius: 25px;
+        margin-bottom: 30px;
     }
 
     .contact-container p {
@@ -97,7 +113,8 @@
         text-decoration: none;
         font-size: 60px;
     }
-    .contact-wrapper .social-icons .social-icons-link img{
+
+    .contact-wrapper .social-icons .social-icons-link img {
         width: auto;
         height: 60px;
     }
@@ -162,8 +179,12 @@
 </style>
 
 <div class="contact-container pt-5">
-    <h1>Contact Us</h1>
-    <p>We're dedicated to providing top-tier solutions and exceptional support to help your business thrive. Connect with us to discover how we can collaborate and achieve remarkable results together.</p>
+    <div class="contact-heading-wrapper">
+        <h1>Contact Us</h1>
+        <div class="heading-underline"></div>
+    </div>
+    <p>We're dedicated to providing top-tier solutions and exceptional support to help your business thrive. Connect
+        with us to discover how we can collaborate and achieve remarkable results together.</p>
     <div class="contact-content mt-5">
         <div class="contact-link">
             <div class="contact-wrapper">
@@ -182,17 +203,40 @@
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div> -->
                     <div class="social-icons-link">
-                        <a href="https://www.fiverr.com/shekhahamid" target="_blank"> <img src="/fiverr-logo.png" alt=""></a>
+                        <a href="https://www.fiverr.com/shekhahamid" target="_blank"> <img src="/fiverr-logo.png"
+                                alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="contact-booking">
-            <p>Welcome to Pelyform! Our expertise in delivering tailored solutions ensures your business receives the precise support it needs. Let's discuss your requirements and explore how we can drive success together.</p>
-            <button>
-                Book Now
-            </button>
+            <p>Welcome to Pelyform! Our expertise in delivering tailored solutions ensures your business receives the
+                precise support it needs. Let's discuss your requirements and explore how we can drive success together.
+            </p>
+            <!-- Google Calendar Appointment Scheduling begin -->
+            
+            <script>
+                (function () {
+                    var target = document.currentScript;
+                    window.addEventListener('load', function () {
+                        calendar.schedulingButton.load({
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DDm4ePS2bsYZT4A3JLC6xVOFkuud4S8NqgkLX_9-Z1sTKqL_kdMogE-pUQkU2M2Un6m6XcqhJ?gv=true',
+                            color: '#1c0030',
+                            label: 'Book Now',
+                            target,
+                        });
+                        // Apply text color after the button is loaded
+                        setTimeout(function () {
+                            var button = target.nextSibling;
+                            if (button && button.tagName === 'BUTTON') {
+                                button.style.color = '#fff';
+                            }
+                        }, 1000); // Adjust the timeout if needed to ensure the button is loaded
+                    });
+                })();
+            </script>
+            <!-- end Google Calendar Appointment Scheduling -->¸
         </div>
     </div>
 </div>

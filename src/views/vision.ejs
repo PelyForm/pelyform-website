@@ -10,7 +10,7 @@
 
   .vision-image-container {
     flex: 1;
-    order: 2;
+    order: 1;
   }
 
   .vision-image {
@@ -20,7 +20,7 @@
 
   .vision-text {
     flex: 1;
-    order: 1;
+    order: 2;
   }
 
   .heading-wrapper{
@@ -48,6 +48,9 @@
   }
 
   @media (max-width: 992px) {
+    .vision-container{
+      padding-top: 30px;
+    }
     .vision-content {
       flex-direction: column;
     }
@@ -60,17 +63,17 @@
       order: 1;
     }
 
-    .vision-text h1 {
+    /* .vision-text h1 {
       text-align: center;
     }
 
     .vision-text p {
       text-align: center;
-    }
+    } */
   }
 </style>
 
-<section class="vision-container pt-sm-5 pt-mt-0">
+<section class="vision-container">
   <div class="vision-content ">
     <div class="vision-text">
       <div class="heading-wrapper">

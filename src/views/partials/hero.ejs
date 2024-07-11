@@ -69,7 +69,26 @@
     <div class="hero-text">
         <h1 class="hero-title"> <%- heroTitle %> </h1>
         <p class="hero-subtitle"><%- heroSubtitle %></p>
-        <button><%- buttonTitle %></button>
+        <script>
+            (function () {
+                var target = document.currentScript;
+                window.addEventListener('load', function () {
+                    calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DDm4ePS2bsYZT4A3JLC6xVOFkuud4S8NqgkLX_9-Z1sTKqL_kdMogE-pUQkU2M2Un6m6XcqhJ?gv=true',
+                        color: '#1c0030',
+                        label: 'Book Now',
+                        target,
+                    });
+                    // Apply text color after the button is loaded
+                    setTimeout(function () {
+                        var button = target.nextSibling;
+                        if (button && button.tagName === 'BUTTON') {
+                            button.style.color = '#ffffff';
+                        }
+                    }, 1000); // Adjust the timeout if needed to ensure the button is loaded
+                });
+            })();
+        </script>
     </div>
     <div class="hero-image">
         <img src="/<%- heroImage %>" alt="Hero Image">
