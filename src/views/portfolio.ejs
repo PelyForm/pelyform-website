@@ -1,0 +1,159 @@
+<style>
+    .portfolio-container {
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-heading-wrapper {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-heading-wrapper h1 {
+        font-weight: 700;
+        color: #1c0030;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+
+    .heading-underline {
+        width: 100px;
+        height: 5px;
+        background-color: #53018b;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+
+    .portfolio-container p {
+        color: #1c0030;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 1.8;
+        text-align: center;
+        margin-bottom: 50px;
+        max-width: 800px;
+    }
+
+    .portfolio-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .portfolio-card {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 350px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .portfolio-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-card-header {
+        background: #d5d2f2;
+        color: #53018b;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    .portfolio-card-header h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .portfolio-card-header .icon {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.2;
+    }
+
+    .portfolio-card-content {
+        padding: 20px;
+    }
+
+    .portfolio-card-content p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.7);
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+</style>
+
+<div class="portfolio-container">
+    <div class="portfolio-heading-wrapper">
+        <h1>Portfolio</h1>
+        <div class="heading-underline"></div>
+    </div>
+    <p>Explore our projects that demonstrate our expertise and innovation in AI and automation solutions.</p>
+    <div class="portfolio-card-container">
+        <div class="portfolio-card">
+            <div class="portfolio-card-header">
+                <i class="fas fa-briefcase icon"></i>
+                <h5>ProjectApply.app</h5>
+            </div>
+            <div class="portfolio-card-content">
+                <p>An AI-powered job searching SaaS application that helps job seekers upload their CV to train personal
+                    AI Assistant to find the perfect job, apply, and answer basic questions on job boards. Includes a
+                    LinkedIn extension with similar functionalities.</p>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card-header">
+                <i class="fas fa-robot icon"></i>
+                <h5>AI Automation</h5>
+            </div>
+            <div class="portfolio-card-content">
+                <p>Automation that handles every stage of a work order from email receipt to completion or cancellation,
+                    including status updates and customer notifications without human intervention.</p>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card-header">
+                <i class="fas fa-store icon"></i>
+                <h5>AI Store</h5>
+            </div>
+            <div class="portfolio-card-content">
+                <p>An AI-powered store allowing users to generate images from conversations, modify them, and create
+                    products. Integrated with OpenAI, Squarespace, Printify, Stripe.</p>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card-header">
+                <i class="fas fa-image icon"></i>
+                <h5>Alohaimages.co</h5>
+            </div>
+            <div class="portfolio-card-content">
+                <p>A premium media purchasing platform where users can easily choose a plan and search media from 100
+                    million results. Includes an algorithm for suggesting the best image based on user search,
+                    preference, history, and allows them to download.</p>
+            </div>
+        </div>
+        <div class="portfolio-card">
+            <div class="portfolio-card-header">
+                <i class="fas fa-boxes icon"></i>
+                <h5>Centralized Inventory</h5>
+            </div>
+            <div class="portfolio-card-content">
+                <p>This backend project automates orders from multiple e-commerce sources and syncs the stock. The main
+                    feature is an application that can predict the sale of specific items based on historic data,
+                    notifying the vendor before stock runs out.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

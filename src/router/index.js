@@ -5,6 +5,7 @@ router.use("/solutions", require("./solutions"))
 router.use("/contact", require("./contact"))
 router.use("/about", require("./about"))
 router.use("/vision", require("./vision"))
+router.use("/portfolio", require("./portfolio"))
 
 
 module.exports = router
