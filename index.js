@@ -10,6 +10,7 @@ const morgan = require('morgan');
 const app = express();
 
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 app.use(
     express.json({
         verify: (req, res, buf, encoding) => {

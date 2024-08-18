@@ -135,12 +135,18 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         background: #fff;
         width: 100%;
         padding-top: 60px;
         padding-bottom: 60px;
+    }
+
+    .contact-booking-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact-booking p {
@@ -164,15 +170,72 @@
         margin-top: 20px;
     }
 
-    .contact-booking button:hover {
-        background-color: #350063;
-        /* Change this to the color you want on hover */
+
+
+    .contact-form {
+        padding: 40px;
+        width: 100%;
     }
+
+    .contact-form .form-group {
+        margin-bottom: 20px;
+    }
+
+    .contact-form label {
+        font-size: 14px;
+        font-weight: 600;
+        color: #1c0030;
+    }
+
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #d1d0d2;
+        border-radius: 5px;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form button {
+        padding: 0.5rem 1rem;
+        background-color: #1c0030;
+        color: white;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+    }
+
+    .contact-form button:hover {
+        background-color: #1c0030;
+    }
+
+
+
 
     @media (max-width: 992px) {
         .contact-content {
             flex-direction: column;
 
+        }
+
+        .contact-link {
+            width: 100%;
+        }
+
+        .contact-booking {
+            width: 100%;
+        }
+
+        .contact-form {
+            width: 100%;
+        }
+
+        .contact-wrapper {
+            padding: 40px;
         }
 
     }
@@ -209,34 +272,69 @@
                 </div>
             </div>
         </div>
-
         <div class="contact-booking">
-            <p>Welcome to Pelyform! Our expertise in delivering tailored solutions ensures your business receives the
-                precise support it needs. Let's discuss your requirements and explore how we can drive success together.
-            </p>
-            <!-- Google Calendar Appointment Scheduling begin -->
             
-            <script>
-                (function () {
-                    var target = document.currentScript;
-                    window.addEventListener('load', function () {
-                        calendar.schedulingButton.load({
-                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DDm4ePS2bsYZT4A3JLC6xVOFkuud4S8NqgkLX_9-Z1sTKqL_kdMogE-pUQkU2M2Un6m6XcqhJ?gv=true',
-                            color: '#1c0030',
-                            label: 'Book Now',
-                            target,
+            <div class="contact-booking-wrapper">
+                <p>Our expertise in delivering tailored solutions ensures your business receives the
+                    precise support it needs. Let's discuss your requirements and explore how we can drive success together.
+                </p>
+                <!-- Google Calendar Appointment Scheduling begin -->
+    
+                <script>
+                    (function () {
+                        var target = document.currentScript;
+                        window.addEventListener('load', function () {
+                            calendar.schedulingButton.load({
+                                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0DDm4ePS2bsYZT4A3JLC6xVOFkuud4S8NqgkLX_9-Z1sTKqL_kdMogE-pUQkU2M2Un6m6XcqhJ?gv=true',
+                                color: '#1c0030',
+                                label: 'Book Now',
+                                target,
+                            });
+                            // Apply text color after the button is loaded
+                            setTimeout(function () {
+                                var button = target.nextSibling;
+                                if (button && button.tagName === 'BUTTON') {
+                                    button.style.color = '#fff';
+                                }
+                            }, 1000); // Adjust the timeout if needed to ensure the button is loaded
                         });
-                        // Apply text color after the button is loaded
-                        setTimeout(function () {
-                            var button = target.nextSibling;
-                            if (button && button.tagName === 'BUTTON') {
-                                button.style.color = '#fff';
-                            }
-                        }, 1000); // Adjust the timeout if needed to ensure the button is loaded
-                    });
-                })();
-            </script>
-            <!-- end Google Calendar Appointment Scheduling -->¸
+                    })();
+                </script>
+            </div>
+            <!-- end Google Calendar Appointment Scheduling -->
+
+            <!-- start contact form  -->
+            <div class="contact-form">
+                <!-- // name, email, company(optional), message -->
+                <p class="mt-4">Or, feel free to fill out the form below, and we will get back to you shortly.</p>
+                <br>
+                <form action="/form-submit-success" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                
+
+
+            </div>
+            <!-- end contact form  -->
+
+
         </div>
     </div>
 </div>
