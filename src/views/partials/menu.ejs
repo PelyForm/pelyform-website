@@ -1,21 +1,22 @@
 <style>
-  /* Import a modern font, e.g., Roboto */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  /* import font family */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+
 
   .navbar-nav .nav-item {
-      margin-right: 20px; /* Adjust this value to increase or decrease the gap */
+      margin-right: 12px; /* Adjust this value to increase or decrease the gap */
   }
   .navbar-nav .nav-link {
       font-weight: 500; /* Increased font weight */
       color: rgba(0, 0, 0, .6);
-      font-family: 'Roboto', sans-serif; /* Modern font */
+      font-family: 'Raleway', sans-serif; /* Use the imported font */
   }
   .navbar-nav .nav-link:hover {
       color: #1c0030;
   }
   .navbar-nav .nav-item.active .nav-link {
       color: #1c0030; /* Text color for active link */
-      font-weight: 700; /* Bold font weight for active link */
+      font-weight: 500; /* Bold font weight for active link */
   }
   .navbar-nav .nav-item.active {
       border-radius: 5px; /* Optional: rounded corners for active link */
@@ -45,14 +46,18 @@
               <a class="nav-link" href="/solutions">Solutions</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/portfolio" >Portfolio</a>
+        </li>
+          <li class="nav-item">
               <a class="nav-link" href="/vision">Vision</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="/about">About Us</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="/contact">Contact</a>
-          </li>
+
       </ul>
   </div>
 </nav>

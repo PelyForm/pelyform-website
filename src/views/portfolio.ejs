@@ -1,6 +1,6 @@
 <style>
     .portfolio-container {
-        padding: 80px 20px;
+        padding: 40px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,6 +91,17 @@
         line-height: 1.6;
         margin-bottom: 0;
     }
+    /* media queries */
+    @media (max-width: 992px) {
+        .portfolio-card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .portfolio-card {
+            width: 100%;
+        }
+    }
 </style>
 
 <div class="portfolio-container">
@@ -98,7 +109,7 @@
         <h1>Portfolio</h1>
         <div class="heading-underline"></div>
     </div>
-    <p>Explore our projects that demonstrate our expertise and innovation.</p>
+    <p>Explore our range of projects that highlight our commitment to excellence and innovation.</p>
     <div class="portfolio-card-container">
         <div class="portfolio-card">
             <div class="portfolio-card-header">
@@ -106,9 +117,8 @@
                 <h5>ProjectApply.app</h5>
             </div>
             <div class="portfolio-card-content">
-                <p>An AI-powered job searching SaaS application that helps job seekers upload their CV to train personal
-                    AI Assistant to find the perfect job, apply, and answer basic questions on job boards. Includes a
-                    LinkedIn extension with similar functionalities.</p>
+                <p>An AI-driven job search platform that assists users in finding ideal job opportunities, applying, and answering common queries on job boards. It features a LinkedIn extension with similar capabilities.</p>
+                <strong>Technology Used:</strong> NodeJS, React, PostgreSQL, AWS, OpenAI, LinkedIn API, Stripe
             </div>
         </div>
         <div class="portfolio-card">
@@ -117,8 +127,8 @@
                 <h5>AI Automation</h5>
             </div>
             <div class="portfolio-card-content">
-                <p>Automation that handles every stage of a work order from email receipt to completion or cancellation,
-                    including status updates and customer notifications without human intervention.</p>
+                <p>An automated solution that manages every phase of a work order, from initial email receipt to finalization or cancellation, including automatic status updates and customer notifications.</p>
+                <strong>Technology Used:</strong> Python, PostgreSQL, AWS, SendGrid, Twilio
             </div>
         </div>
         <div class="portfolio-card">
@@ -127,8 +137,8 @@
                 <h5>AI Store</h5>
             </div>
             <div class="portfolio-card-content">
-                <p>An AI-powered store allowing users to generate images from conversations, modify them, and create
-                    products. Integrated with OpenAI, Squarespace, Printify, Stripe.</p>
+                <p>A store powered by AI where users can generate, modify, and create products from images generated through conversations.</p>
+                <strong>Technology Used:</strong> OpenAI, Squarespace, Printify, Stripe, NodeJS, PostgreSQL, AWS EC2, S3
             </div>
         </div>
         <div class="portfolio-card">
@@ -137,9 +147,8 @@
                 <h5>Alohaimages.co</h5>
             </div>
             <div class="portfolio-card-content">
-                <p>A premium media purchasing platform where users can easily choose a plan and search media from 100
-                    million results. Includes an algorithm for suggesting the best image based on user search,
-                    preference, history, and allows them to download.</p>
+                <p>A premium media purchasing platform offering users a curated selection from over 100 million images, with personalized suggestions based on user history and preferences.</p>
+                <strong>Technology Used:</strong> NodeJS, Python, React, MongoDB, AWS, Stripe
             </div>
         </div>
         <div class="portfolio-card">
@@ -148,9 +157,8 @@
                 <h5>Centralized Inventory</h5>
             </div>
             <div class="portfolio-card-content">
-                <p>This backend project automates orders from multiple e-commerce sources and syncs the stock. The main
-                    feature is an application that can predict the sale of specific items based on historic data,
-                    notifying the vendor before stock runs out.</p>
+                <p>A backend system that automates order management across various e-commerce platforms, synchronizes stock, and predicts sales trends to notify vendors of potential stock shortages.</p>
+                <strong>Technology Used:</strong> Python, PostgreSQL, Azure, React
             </div>
         </div>
     </div>

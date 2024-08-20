@@ -2,7 +2,7 @@
     .contact-container {
         box-shadow: rgba(216, 215, 215, 0.1) -4px 9px 25px -6px;
         height: 100%;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -142,7 +142,7 @@
         padding-bottom: 60px;
     }
 
-    .contact-booking-wrapper{
+    .contact-booking-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -187,7 +187,8 @@
         color: #1c0030;
     }
 
-    .contact-form input, .contact-form textarea {
+    .contact-form input,
+    .contact-form textarea {
         width: 100%;
         padding: 10px;
         border: 1px solid #d1d0d2;
@@ -246,7 +247,8 @@
         <h1>Contact Us</h1>
         <div class="heading-underline"></div>
     </div>
-    <p>We're committed to delivering innovative solutions that elevate your business. Connect with us to explore how our expertise can drive your success.</p>
+    <p>We're committed to delivering innovative solutions that elevate your business. Connect with us to explore how our
+        expertise can drive your success.</p>
     <div class="contact-content mt-5">
         <div class="contact-link">
             <div class="contact-wrapper">
@@ -259,14 +261,16 @@
                 </div>
                 <div class="social-icons">
                     <div class="social-icons-link">
-                        <a href="https://www.fiverr.com/shekhahamid" target="_blank"><img src="/fiverr-logo.png" alt="Fiverr Profile"></a>
+                        <a href="https://www.fiverr.com/shekhahamid" target="_blank"><img src="/fiverr-logo.png"
+                                alt="Fiverr Profile"></a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="contact-booking">
             <div class="contact-booking-wrapper">
-                <p>Our tailored solutions are designed to meet your unique business needs. Schedule a meeting with us to discuss how we can help you achieve your goals.</p>
+                <p>Our tailored solutions are designed to meet your unique business needs. Schedule a meeting with us to
+                    discuss how we can help you achieve your goals.</p>
                 <!-- Google Calendar Appointment Scheduling begin -->
                 <script>
                     (function () {
@@ -287,12 +291,31 @@
                         });
                     })();
                 </script>
+
+
+                <script>
+                    document.addEventListener('click', function (event) {
+                        // Check if the clicked element is a button
+                        if (event.target.tagName === 'BUTTON') {
+                            // Check if the button's text is exactly "Book"
+                            if (event.target.innerText.trim() === 'Book') {
+                                // Push the event to the dataLayer
+                                window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({
+                                    'event': 'calendarBookClick',
+                                    'action': 'Book Button Clicked'
+                                });
+                            }
+                        }
+                    });
+                </script>
+
             </div>
             <!-- end Google Calendar Appointment Scheduling -->
 
             <!-- start contact form  -->
             <div class="contact-form">
-                <p >Or, use the form below to send us a message, and we'll get back to you shortly.</p>
+                <p>Or, use the form below to send us a message, and we'll get back to you shortly.</p>
                 <br>
                 <form action="/form-submit-success" method="POST">
                     <div class="form-group">
